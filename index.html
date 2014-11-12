@@ -7,15 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/pure.min.css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
+            .letter {
+              color: #404;
+            }
+
         </style>
-        <link rel="stylesheet" href="vendor/pure.min.css">
-        <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -29,19 +31,22 @@
 
         <h2>morphologs</h2>
 
-        <h1 id="theword">TheWord</h1>
+        <!-- placeholder for our word -->
+        <h1 id="theword"></h1>
 
         <hr>
         <footer>
           <small>
             <p>
-              &copy; Ponelat bros 2014
+              &copy; Ponelat bros 2014 <br />
+              With help from Oliver <br />
               <a href="http://ponelat.github.io" target="_blank">ponelat.github.io</a>
             </p>
           </small>
         </footer>
 
       <!-- the rest is code -->
+      <!-- load jquery from cdn, or locally -->
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
