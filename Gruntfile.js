@@ -31,9 +31,9 @@ module.exports = function(grunt) {
 
    'bower-install-simple': {
      all:{}
-   }
+   },
 
-    jshint: {
+   jshint: {
       options: {
         curly: true,
         eqeqeq: true,
@@ -50,10 +50,24 @@ module.exports = function(grunt) {
         globals: {}
       },
 
+      src: {
+        src: 'js/*.js'
+      },
       gruntfile: {
         src: 'Gruntfile.js'
-      }
+      },
     },
+
+    watch: {
+      gruntfile: {
+        files: 'Gruntfile.js',
+        tasks: ['jshint:gruntfile'],
+      },
+      src: {
+        files: ['js/*.js'],
+        tasks: ['jshint:src'],
+      }
+    }
 
   });
 
@@ -61,6 +75,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-bower-install-simple');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
   grunt.registerTask('bower', ['bower-install-simple','concat:bower']);
