@@ -14,10 +14,6 @@ module.exports = function(grunt) {
     
     // Task configuration.
     concat: {
-      options: {
-        banner: '<%= banner %>',
-        stripBanners: true
-      },
       bower:{
         options: {
           banner: '',
