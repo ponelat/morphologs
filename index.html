@@ -7,14 +7,39 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="vendor/pure.min.css">
+        <link rel="stylesheet" href="css/vendor/pure.min.css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
             .letter {
-              color: #404;
+              color: #080;
+            }
+            .green-col{
+              background-color: #080;
+              position: absolute;
+              width: 3em;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+            .title{
+              margin-bottom: 2px;
+            }
+            .subtext {
+              color: #aaa;
+            }
+            #theword {
+              font-size: 50px;
+              letter-spacing: 0.15em;
+              color: #111;
+            }
+            .letter,.letter:link, .letter:visited, .letter:hover, .letter:active {
+              text-decoration: none;
+            }
+            footer {
+              color: #888;
             }
 
         </style>
@@ -29,11 +54,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
+        <div class="green-col"></div>
+
         <div class="container">
           <div class="pure-g-r">
           <div class="pure-u-1-3"></div>
             <div class="pure-u-1-3">
-              <h2>morphologs</h2>
+              <h2 class="title" > morphologs </h2>
+              <small class="subtext">*click on the letters to swap them</small>
               
               <!-- placeholder for our word -->
               <h1 id="theword"></h1>
@@ -42,21 +71,25 @@
           <div class="pure-u-1-3"></div>
         </div>
 
+
         <hr>
-        <footer>
-          <small>
-            <p>
+        <footer class="pure-g">
+          <div class="pure-u-1-5"></div>
+          <div class="pure-u-1-3">
+            <small>
+              <p>
               &copy; Ponelat bros 2014 <br />
               With help from Oliver <br />
               <a href="http://ponelat.github.io" target="_blank">ponelat.github.io</a>
-            </p>
-          </small>
+              </p>
+            </small>
+          </div>
         </footer>
 
       <!-- the rest is code -->
       <!-- load jquery from cdn, or locally -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
 
       <!-- our code -->
       <script src="js/main.js"></script>
