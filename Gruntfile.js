@@ -24,7 +24,8 @@ module.exports = function(grunt) {
           stripBanners: false
         },
         files: {
-          'vendor/pure.min.css': ['./bower_components/pure/pure-min.css']
+          'css/vendor/pure.min.css': ['./bower_components/pure/pure-min.css'],
+          'js/vendor/jquery.min.js': ['./bower_components/jquery/dist/jquery.min.js']
         } 
       }
     },
