@@ -8,13 +8,14 @@
   },
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-bower-install-simple": "^1.0.3",
     "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-bower-install-simple": "^1.0.3"
+    "grunt-contrib-watch": "^0.6.1"
   },
   "scripts": {
     "test": "grunt test",
-    "server": "browser-sync start --server --files='index.html'"
+    "start": "browser-sync start --server --files='index.html, js/*.js' & grunt watch"
   },
   "repository": {
     "type": "git",
