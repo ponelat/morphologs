@@ -14,7 +14,7 @@
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="vendor/pure.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <!--[if lt IE 9]>
@@ -27,21 +27,30 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <h2>morphologs</h2>
 
-        <h1 class="text-center" id="theword">TheWord</h1>
-      <hr>
+        <h1 id="theword">TheWord</h1>
 
-      <footer>
-        <p>&copy; Ponelat bros 2014</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <hr>
+        <footer>
+          <small>
+            <p>
+              &copy; Ponelat bros 2014
+              <a href="http://ponelat.github.io" target="_blank">ponelat.github.io</a>
+            </p>
+          </small>
+        </footer>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+      <!-- the rest is code -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
-        <script src="js/main.js"></script>
-        <script type='text/javascript' id="__bs_script__">//<![CDATA[
-            document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.6.5.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
-        //]]></script>
+      <!-- our code -->
+      <script src="js/main.js"></script>
+
+      <!-- for browser-sync -->
+      <script type='text/javascript' id="__bs_script__">//<![CDATA[
+          document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.1.6.5.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
+      //]]></script>
     </body>
 </html>
