@@ -67,6 +67,7 @@ $(function(){
 
  $('.letter')
    .click(function(e) {
+     e.preventDefault();
      var $lett = $(e.target);
      var l = $lett.text();
      $lett.text(swap_letter(l));
