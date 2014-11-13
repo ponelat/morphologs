@@ -10,3 +10,4 @@ Right now, vowels are swapped for vowels and consonants for consonants.
 
 ## TODO
 - Make letter swaps more readable.
+- Don't allow the same letter to be swapped in.
